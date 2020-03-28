@@ -1,6 +1,3 @@
-CREATE USER pc@localhost IDENTIFIED BY 'Mysql@123456';
-GRANT ALL PRIVILEGES ON * . * TO pc@localhost;
-
 CREATE DATABASE IF NOT EXISTS petclinic;
 
 ALTER DATABASE petclinic
