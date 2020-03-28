@@ -430,7 +430,7 @@
 						<driver>com.mysql.jdbc.Driver</driver>
 						<url>jdbc:mysql://localhost:3306/petclinic?useUnicode=true</url>
 						<username>root</username>
-						<password>mysql</password>
+						<password>Mysql@123456</password>
 					</configuration>
 					<executions>
 						<execution>
