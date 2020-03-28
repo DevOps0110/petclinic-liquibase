@@ -4,6 +4,8 @@ ALTER DATABASE petclinic
   DEFAULT CHARACTER SET utf8
   DEFAULT COLLATE utf8_general_ci;
 
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'Mysql@123456';
+
 USE petclinic;
 
 CREATE TABLE IF NOT EXISTS vets (
