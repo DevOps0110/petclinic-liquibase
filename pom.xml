@@ -7,7 +7,7 @@
 	<artifactId>spring-petclinic</artifactId>
 	<version>4.3.6</version>
 
-	<name>petclinic</name>
+	<name>petclinic-liquibase</name>
 	<packaging>war</packaging>
 
 	<properties>
