@@ -1,3 +1,5 @@
+GRANT ALL PRIVILEGES on *.* to root@'ec2-10-0-2-17.us-west-2.compute.amazonaws.com' IDENTIFIED BY 'Mysql@123456';
+
 CREATE DATABASE IF NOT EXISTS petclinic;
 
 ALTER DATABASE petclinic
