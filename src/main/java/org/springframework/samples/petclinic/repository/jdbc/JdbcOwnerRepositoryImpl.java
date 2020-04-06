@@ -127,7 +127,10 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
     public void save(Owner owner) throws DataAccessException {
         BeanPropertySqlParameterSource parameterSource = new BeanPropertySqlParameterSource(owner);
         if (owner.isNew()) {
-            Number newKey = this.insertOwner.executeAndReturnKey(parameterSource);
+            if(owner.getCity() == "") {
+            	owner.setCity(null);
+            }
+        	Number newKey = this.insertOwner.executeAndReturnKey(parameterSource);
             owner.setId(newKey.intValue());
         } else {
             this.namedParameterJdbcTemplate.update(
