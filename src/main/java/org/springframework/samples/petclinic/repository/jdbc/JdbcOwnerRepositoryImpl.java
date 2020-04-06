@@ -125,7 +125,10 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
 
     @Override
     public void save(Owner owner) throws DataAccessException {
-        BeanPropertySqlParameterSource parameterSource = new BeanPropertySqlParameterSource(owner);
+    	if(owner.getCity() == "") {
+        	owner.setCity(null);
+        }
+    	BeanPropertySqlParameterSource parameterSource = new BeanPropertySqlParameterSource(owner);
         if (owner.isNew()) {
             if(owner.getCity() == "") {
             	owner.setCity(null);
