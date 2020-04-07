@@ -17,5 +17,11 @@
 		</insert>
 		<rollback>delete from owners where id=12</rollback>
 	</changeSet>
+    <changeSet author="liquibase-docs" id="addNotNullConstraint">
+		<addNotNullConstraint catalogName="petclinic"
+			columnDataType="VARCHAR(50)" columnName="city" constraintName="const_name"
+			defaultNullValue="A String" schemaName="petclinic" tableName="owners" />
+        <rollback>ALTER TABLE owners MODIFY city varchar(50) NULL;</rollback>
+	</changeSet>
 	
 </databaseChangeLog>
