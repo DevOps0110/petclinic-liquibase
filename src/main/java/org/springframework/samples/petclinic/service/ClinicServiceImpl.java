@@ -74,7 +74,7 @@ public class ClinicServiceImpl implements ClinicService {
 
     @Override
     @Transactional
-    public void saveOwner(Owner owner) throws DataAccessException {
+    public void saveOwner(Owner owner) throws DataAccessException, Exception {
         ownerRepository.save(owner);
     }
 

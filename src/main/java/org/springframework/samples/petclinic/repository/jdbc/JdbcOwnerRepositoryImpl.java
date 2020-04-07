@@ -117,7 +117,7 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
 	}
 
 	@Override
-	public void save(Owner owner) throws Exception {
+	public void save(Owner owner) throws DataAccessException, Exception {
 		if (owner.getCity() == "") {
 			owner.setCity(null);
 		}
