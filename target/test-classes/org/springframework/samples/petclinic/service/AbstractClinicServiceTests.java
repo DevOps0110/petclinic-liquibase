@@ -75,7 +75,7 @@ public abstract class AbstractClinicServiceTests {
 
     @Test
     @Transactional
-    public void shouldInsertOwner() {
+    public void shouldInsertOwner() throws Exception{
         Collection<Owner> owners = this.clinicService.findOwnerByLastName("Schultz");
         int found = owners.size();
 
@@ -94,7 +94,7 @@ public abstract class AbstractClinicServiceTests {
 
     @Test
     @Transactional
-    public void shouldUpdateOwner() {
+    public void shouldUpdateOwner() throws Exception {
         Owner owner = this.clinicService.findOwnerById(1);
         String oldLastName = owner.getLastName();
         String newLastName = oldLastName + "X";
@@ -127,7 +127,7 @@ public abstract class AbstractClinicServiceTests {
 
     @Test
     @Transactional
-    public void shouldInsertPetIntoDatabaseAndGenerateId() {
+    public void shouldInsertPetIntoDatabaseAndGenerateId() throws Exception {
         Owner owner4 = this.clinicService.findOwnerById(4);
         int found = owner4.getPets().size();
 
