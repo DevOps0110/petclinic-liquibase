@@ -24,3 +24,5 @@
         <rollback>ALTER TABLE owners MODIFY city varchar(50) NULL;</rollback>
 	</changeSet>
 </databaseChangeLog>
+
+
