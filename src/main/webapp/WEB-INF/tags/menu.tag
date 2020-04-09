@@ -5,6 +5,9 @@
               description="Name of the active menu: home, owners, vets or error" %>
 
 <nav class="navbar navbar-default" role="navigation">
+    <div class="container" style="background-color:#6db33f; border-bottom:2px solid black; width:100%; text-align:center">
+    <h1 style = "font-weight: bold;color: #ffffff">Petclinic DAC-DevOps</h1>
+    </div>
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="<spring:url value="/" htmlEscape="true" />"><span></span></a>
