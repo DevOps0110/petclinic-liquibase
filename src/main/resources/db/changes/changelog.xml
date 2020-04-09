@@ -17,5 +17,4 @@
 		</insert>
 		<rollback>delete from owners where id=12</rollback>
 	</changeSet>
-	
 </databaseChangeLog>
