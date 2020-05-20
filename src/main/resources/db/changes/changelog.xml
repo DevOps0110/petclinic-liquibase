@@ -39,4 +39,10 @@
         schemaName="petclinic" tableName="owners" />    
         <rollback>ALTER TABLE owners MODIFY city varchar(50) NOT NULL;</rollback>       
     </changeSet>
+    <changeSet author="liquibase-docs" id="addNotNullConstraint2">
+		<addNotNullConstraint catalogName="petclinic"
+			columnDataType="VARCHAR(50)" columnName="city" constraintName="const_name"
+			defaultNullValue="A String" schemaName="petclinic" tableName="owners" />
+	</changeSet>
+    
 </databaseChangeLog>
