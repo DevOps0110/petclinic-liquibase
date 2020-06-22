@@ -507,9 +507,9 @@
 				<db.script>mysql</db.script>
 				<jpa.database>MYSQL</jpa.database>
 				<jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
-				<jdbc.url>jdbc:mysql://10.0.2.17:3306/petclinic?useUnicode=true</jdbc.url>
-				<jdbc.username>root</jdbc.username>
-				<jdbc.password>Mysql@123456</jdbc.password>
+				<jdbc.url>${abc}</jdbc.url>
+				<jdbc.username>${xyz}</jdbc.username>
+				<jdbc.password>${jdbc_password}</jdbc.password>
 			</properties>
 			<dependencies>
 				<dependency>
