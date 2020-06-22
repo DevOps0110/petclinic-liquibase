@@ -509,7 +509,7 @@
 				<jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
 				<jdbc.url>${abc}</jdbc.url>
 				<jdbc.username>${xyz}</jdbc.username>
-				<jdbc.password>Mysql@123456</jdbc.password>
+				<jdbc.password>${jdbc_password}</jdbc.password>
 			</properties>
 			<dependencies>
 				<dependency>
