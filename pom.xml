@@ -428,7 +428,7 @@
 					<configuration>
 						<changeLogFile>src\main\resources\db\changes\changelog.xml</changeLogFile>
 						<driver>com.mysql.jdbc.Driver</driver>
-						<url>jdbc:mysql://172.31.3.127:3306/petclinic?useUnicode=true</url>
+						<url>jdbc:mysql://10.0.2.17:3306/petclinic?useUnicode=true</url>
 						<username>root</username>
 						<password>Mysql@123456</password>
 						<promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
