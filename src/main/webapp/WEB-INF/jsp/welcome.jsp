@@ -12,7 +12,7 @@
             <img class="img-responsive" src="${petsImage}"/>
         </div>
         <h2>We strive to provide the best veterinary medicine coupled with the most compassionate, collaborative care in the region</h2>
-        <h2>This site has been integrate with Hashicorp Vault!</h2>
+        <h2>This website has been integrated with Hashicorp Vault!! :)</h2>
     </div>
     <br/><br/><br/><br/><br/>
 
