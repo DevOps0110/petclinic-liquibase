@@ -5,7 +5,7 @@
 
 <petclinic:layout pageName="home">
     <h2></h2>    
-    <h2>Welcome to PetClinic!</h2>
+    <h2>Welcome to PetClinic!!</h2>
     <div class="row">
         <div class="col-md-12">
             <spring:url value="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWmixMSxZPxON9PY1-YpNYbmL63rNqToGBAEEpchCCNXohcsCc&usqp=CAU" htmlEscape="true" var="petsImage"/>
